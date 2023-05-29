@@ -1,0 +1,116 @@
+/* Navigation bar */
+.navbar {
+  background-color: #008080;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff;
+}
+
+/* Buttons */
+.btn {
+  background-color: #008080;
+  color: #ffffff;
+  border: 0px;
+}
+
+.btn-outline-light{
+  border: white solid 1px !important
+}
+
+
+.btn:hover, .btn:focus {
+  background-color: #66CCCC;
+}
+
+.btn:disabled {
+  background-color: #CCCCCC;
+}
+
+.btn-danger {
+  background-color: #d82e2e;
+  color: #ffffff;
+}
+
+.btn-danger:hover, .btn:focus {
+  background-color: #d82e2e;
+}
+
+.btn-danger:disabled {
+  background-color: #d82e2e;
+}
+
+/* Text */
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+}
+
+body {
+  color: #000000;
+}
+
+a {
+  color: #008080;
+}
+
+/* Accent text */
+.accent-text {
+  color: #66CC99;
+}
+
+/* User text input and forms */
+input, textarea, select {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #CCCCCC;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #333333;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #66CCCC !important;
+}
+
+input:invalid, textarea:invalid, select:invalid {
+  border-color: #FF0000;
+}
+
+/* Forms */
+label {
+  color: #333333;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  border-color: #333333;
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+  background-color: #008080;
+}
+
+label:disabled, input[type="checkbox"]:disabled, input[type="radio"]:disabled {
+  color: #CCCCCC;
+}
+
+.form-control {
+  outline: none;
+  box-shadow:none !important;
+  border:1px solid #ccc !important;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  background-color: #016b6b !important;
+}
+
+.nav-link-active{
+  background-color: #008080 !important;
+}
+
+.navbar-brand{
+  font-weight: 700;
+}
+
