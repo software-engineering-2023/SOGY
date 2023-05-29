@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OasisBank - Credit Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e2e56eacb7.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e2e56eacb7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class=" text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+             <a class="navbar-brand" href="index.html"><i class="fa-solid fa-droplet fa-xl me-2" style="color: #ffffff;"></i>OasisBank</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white"
+        style="width: 280px; height: 100vh !important; background-color: #005a5a;">
+
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+          <span class="fs-4 ms-3">Seif Amr</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a href="clientBankAccounts.html" class="nav-link  text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2" />
+              </svg>
+              Bank Accounts
+            </a>
+          </li>
+          <li>
+            <a href="clientCreditCards.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2" />
+              </svg>
+              Credit Cards
+            </a>
+          </li>
+          <li>
+            <a href="clientLoans.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table" />
+              </svg>
+              Loans
+            </a>
+          </li>
+          <li>
+            <a href="clientTransactions.html" class="nav-link  text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#grid" />
+              </svg>
+              Transactions
+            </a>
+          </li>
+          <li>
+            <a href="clientReminders.html" class="nav-link nav-link-active  text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Reminders
+            </a>
+          </li>
+          <li>
+            <a href="clientBills.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Pay Bills
+            </a>
+          </li>
+          <li>
+            <a href="clientNotifications.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Notifications
+            </a>
+          </li>
+          <li>
+            <a href="clientReportIssue.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Report Issue
+            </a>
+          </li>
+          <li>
+            <a href="clientReportCard.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Credit Card Replacement
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a onclick="signout()" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Sign Out
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+
+        <!-- Reminders data -->
+        <h2 class="mt-4 mb-4">Reminders</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Due Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gas</td>
+              <td>06/01/23</td>
+              <td>$50</td>
+            </tr>
+            <tr>
+              <td>Electricity</td>
+              <td>06/05/23</td>
+              <td>$70</td>
+            </tr>
+            <tr>
+              <td>Water</td>
+              <td>06/10/23</td>
+              <td>$40</td>
+            </tr>
+            <tr>
+              <td>Telephone</td>
+              <td>06/15/23</td>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <td>Loan</td>
+              <td>06/20/23</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Credit Cards</td>
+              <td>06/25/23</td>
+              <td>$150</td>
+            </tr>
+            <tr>
+              <td>Gas</td>
+              <td>07/01/23</td>
+              <td>$50</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Reminder Settings for payments due</h2>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Gas Bills</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Electricity Bills</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+          <label class="form-check-label" for="flexSwitchCheckDefault">Water Bills</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Telephone Bills</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Laons</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Credit Cards</label>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/client.js"></script>
+</body>
+
+</html>

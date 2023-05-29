@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OasisBank - Credit Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e2e56eacb7.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e2e56eacb7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class=" text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+             <a class="navbar-brand" href="index.html"><i class="fa-solid fa-droplet fa-xl me-2" style="color: #ffffff;"></i>OasisBank</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white"
+        style="width: 280px; height: 100vh !important; background-color: #005a5a;">
+
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+          <span class="fs-4 ms-3">Seif Amr</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a href="clientBankAccounts.html" class="nav-link  text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2" />
+              </svg>
+              Bank Accounts
+            </a>
+          </li>
+          <li>
+            <a href="clientCreditCards.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2" />
+              </svg>
+              Credit Cards
+            </a>
+          </li>
+          <li>
+            <a href="clientLoans.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table" />
+              </svg>
+              Loans
+            </a>
+          </li>
+          <li>
+            <a href="clientTransactions.html" class="nav-link   text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#grid" />
+              </svg>
+              Transactions
+            </a>
+          </li>
+          <li>
+            <a href="clientReminders.html" class="nav-link  text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Reminders
+            </a>
+          </li>
+          <li>
+            <a href="clientBills.html" class="nav-link  text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Pay Bills
+            </a>
+          </li>
+          <li>
+            <a href="clientNotifications.html" class="nav-link nav-link-active text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Notifications
+            </a>
+          </li>
+          <li>
+            <a href="clientReportIssue.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Report Issue
+            </a>
+          </li>
+          <li>
+            <a href="clientReportCard.html" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Credit Card Replacement
+            </a>
+          </li>
+          <hr>
+          <li>
+            <a onclick="signout()" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" />
+              </svg>
+              Sign Out
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+
+        <!-- Notifications data -->
+        <h2 class="mt-4 mb-4">Notifications</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Notification Type</th>
+              <th scope="col">Title</th>
+              <th scope="col">Details</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Issue Resolution</td>
+              <td>ATM Issue Resolved</td>
+              <td>Your issue regarding ATM withdrawal has been resolved. Please check your account balance.</td>
+              <td>05/24/23</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Bank Announcement</td>
+              <td>New Branch Opening</td>
+              <td>We are opening a new branch in your city. Visit us for more details.</td>
+              <td>05/23/23</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Issue Resolution</td>
+              <td>Online Banking Issue Resolved</td>
+              <td>Your issue regarding online banking has been resolved. You can now access your account online.</td>
+              <td>05/22/23</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Bank Announcement</td>
+              <td>Interest Rate Change</td>
+              <td>Interest rates for savings accounts have been revised. Please visit our website for more details.</td>
+              <td>05/21/23</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/client.js"></script>
+</body>
+
+</html>
